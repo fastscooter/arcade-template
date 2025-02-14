@@ -17,37 +17,9 @@
 
   <PropertyGroup>
     <SystemIOCompressionZipFileVersion>4.3.0</SystemIOCompressionZipFileVersion>
-    <MicrosoftVisualStudioSDKVersion>16.9.31025.194</MicrosoftVisualStudioSDKVersion>
-    <MicrosoftVSSDKBuildToolsVersion>16.9.1050</MicrosoftVSSDKBuildToolsVersion>
-    <MicrosoftVisualStudioThreadingVersion>16.9.60</MicrosoftVisualStudioThreadingVersion>
+    <MicrosoftVisualStudioSDKVersion>17.13.40008</MicrosoftVisualStudioSDKVersion>
+    <MicrosoftVSSDKBuildToolsVersion>17.13.2126</MicrosoftVSSDKBuildToolsVersion>
   </PropertyGroup>
-  
-  
-  <!--
-  
-  *** NOTE: Stick the proper PropertyGroup below before the first Sdk element or Import element in a project file ***
-  
-  === VSIX Project ===
-  
-  <PropertyGroup>
-    <UsingToolVsSDK>true</UsingToolVsSDK>
-    <AssemblyName>SomeName.vsix</AssemblyName>
-    <RootNamespace>SomeName.vsix</RootNamespace>
-    <TargetVsixContainerName>SomeName.vsix</TargetVsixContainerName>
-  </PropertyGroup>
-  
-  
-  === VSPackage Project ===
-  
-  <PropertyGroup>   
-    <UsingToolVsSDK>true</UsingToolVsSDK>
-    <GeneratePkgDefFile>true</GeneratePkgDefFile>
-    <CreateVsixContainer>false</CreateVsixContainer>    
-    <RootNamespace>SomeName</RootNamespace>
-    <AssemblyName>SomeName</AssemblyName>
-  </PropertyGroup>
-  
-  -->
 
   <Choose>
     <When Condition="'$(Configuration)'=='Debug'">
@@ -75,6 +47,5 @@
       </PropertyGroup>
     </Otherwise>
   </Choose>
-  
-  
+
 </Project>
